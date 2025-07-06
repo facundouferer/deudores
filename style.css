@@ -1,0 +1,77 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    /* Elimina text-align: center para que los hijos no se centren en bloque */
+    background-color: white;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    /* Opcional: limita el ancho máximo */
+    width: 100%;
+}
+
+.search-container {
+    margin-bottom: 1rem;
+}
+
+input {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Puedes poner esto en tu archivo style.css o dentro de <style> en tu HTML */
+.periodo-flex {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 32px;
+    width: 100%;
+}
+
+.grafico-torta {
+    flex: 0 0 50%;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grafico-torta canvas {
+    width: 240px !important;
+    height: 240px !important;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+.tabla-entidades {
+    flex: 0 0 50%;
+    max-width: 50%;
+    overflow-x: auto;
+}
+
+.tabla-entidades table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+.tabla-entidades th, .tabla-entidades td {
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    text-align: left;
+}
